@@ -56,7 +56,6 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
         "/api":{target:'http://192.168.40.7:8080', changeOrigin:true},
-        "/blog":{target:"http://aloysians.com",changeOrigin:true},
         "/dashboard":{
             target:"http://dev.soyoung.com",
             changeOrigin:true,
