@@ -1,0 +1,329 @@
+ @charset "utf-8";
+
+ @aColor : #000;
+ @aHover : #4398ed;
+ @basicC1 : #f9f9f9;
+ @basicC2 : #f3f3f3;
+ @basicC3 : #1abc9c;
+ @basicGreen : #34a95d;
+ @tsDur   : 0.3s;
+ @h1 : 0.46rem;
+ @h2 : 0.36rem;
+ @h3 : 0.32rem;
+ @pic_path: "/static/img/";
+ @keyframes voicepulse{
+      0% {
+          top:-5px;
+      }
+      100% {
+          top:-15px;
+      }
+}
+@-webkit-keyframes voicepulse{
+      0% {
+          top:-5px;
+      }
+      100% {
+          top:-15px;
+      }
+}
+@-moz-keyframes voicepulse{
+      0% {
+          top:-5px;
+      }
+      100% {
+          top:-15px;
+      }
+}
+@-ms-keyframes voicepulse{
+      0% {
+          top:-5px;
+      }
+      100% {
+          top:-15px;
+      }
+}
+@-o-keyframes voicepulse{
+      0% {
+          top:-5px;
+      }
+      100% {
+          top:-15px;
+      }
+}
+ .a(@a){
+  animation:@a;
+  -webkit-animation:@a;
+  -moz-animation:@a;
+  -ms-animation:@a;
+  -o-animation:@a;
+ }
+ .vt(@a){
+  vertical-align:@a;
+ }
+ .td(@a){
+  text-decoration:@a;
+ }
+ .of(@a){
+  overflow:@a;
+ }
+ .mah(@a){
+  max-height: @a;
+ }
+ .mih(@a){
+  min-height: @a;
+ }
+ .maw(@a){
+  max-width: @a;
+ }
+ .miw(@a){
+  min-width: @a;
+ }
+ .va(@a){
+  vertical-align: @a;
+ }
+ .zi(@a){
+  z-index:@a;
+ }
+ .fulls(){
+    &:fullscreen{
+      .pf;
+      .t(0);
+      .b(0);
+      .l(0);
+      .r(0);
+      .oh; 
+    }
+    &:-webkit-fullscreen{
+      .pf;
+      .t(0);
+      .b(0);
+      .l(0);
+      .r(0);
+      .oh; 
+    }
+    &:-moz-fullscreen{
+      .pf;
+      .t(0);
+      .b(0);
+      .l(0);
+      .r(0);
+      .oh; 
+    }
+    &:-ms-fullscreen{
+      .pf;
+      .t(0);
+      .b(0);
+      .l(0);
+      .r(0);
+      .oh; 
+    }
+    &:-o-fullscreen{
+      .pf;
+      .t(0);
+      .b(0);
+      .l(0);
+      .r(0);
+      .oh; 
+    }
+ }
+ .tf(@v){
+  transform:@v;
+  -webkit-transform:@v;
+  -moz-transform:@v;
+  -ms-transform:@v;
+  -o-transform:@v;
+}
+.to(@v){
+  transform-origin:@v;
+  -webkit-transform-origin:@v;
+  -moz-transform-origin:@v;
+  -ms-transform-origin:@v;
+  -o-transform-origin:@v;
+}
+
+.ts(@v){
+  transition:@v;
+  -webkit-transition:@v;
+  -moz-transition:@v;
+  -ms-transition:@v;
+  -o-transition:@v;
+}
+.dim(@w,@h){
+  width:@w;
+  height:@h;
+}
+.ta(@a){
+  text-align:@a;
+}
+.apper(){
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+}
+.ti(@a){
+  text-indent:@a;
+}
+.ws(){
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mws(@v){
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @v;
+}
+.lh(@a){
+  line-height:@a;
+}
+.opa(@a){
+  opacity : @a;
+}
+.bgc(@c){
+  background-color:@c;
+}
+.bg(@c){
+  background:@c;
+}
+.o(@a){
+  outline:@a;
+}
+.fc(@c){
+  color:@c;
+}
+.mt(@a){
+  margin-top : @a;
+}
+.mb(@a){
+  margin-bottom : @a;
+}
+.ml(@a){
+  margin-left : @a;
+}
+.mr(@a){
+  margin-right : @a;
+}
+.mg(@a){
+  margin: @a;
+}
+.lh(@a){
+  line-height:@a;
+}
+.pb(@a){
+  padding-bottom : @a;
+}
+.pt(@a){
+  padding-top : @a;
+}
+.pl(@a){
+  padding-left : @a;
+}
+.pdr(@a){
+  padding-right : @a;
+}
+.pd(@a){
+  padding : @a;
+}
+.fs(@a){
+  font-size:@a;
+}
+.dn(){
+  display:none;
+}
+.dib(){
+  display:inline-block;
+}
+.db(){
+  display:block;
+}
+.fl(){
+  float:left;
+}
+.fr(){
+  float:right;
+}
+.pr(){
+  position:relative;
+}
+.pf(){
+  position:fixed;
+}
+.pa(){
+  position:absolute;
+}
+.w(@a){
+  width: @a;
+}
+.h(@a){
+  height: @a;
+}
+.l(@a){
+  left: @a;
+}
+.r(@a){
+  right: @a;
+}
+.b(@a){
+  bottom: @a;
+}
+.t(@a){
+  top: @a;
+}
+.brs(@a){
+  border-radius:@a;
+  -webkit-border-radius:@a;
+  -moz-border-radius:@a;
+  -ms-border-radius:@a;
+  -o-border-radius:@a;
+}
+.br(@a){
+  border-right : @a;
+}
+.bl(@a){
+  border-left : @a;
+}
+.bt(@a){
+  border-top : @a;
+}
+.bb(@a){
+  border-bottom : @a;
+}
+.bd(@a){
+  border:@a;
+}
+.bs(@a){
+  box-shadow:@a;
+  -webkit-box-shadow:@a;
+  -moz-box-shadow:@a;
+  -ms-box-shadow:@a;
+  -o-box-shadow:@a;
+}
+.bxs(@a){
+  box-sizing: @a;
+}
+.oh(){
+  overflow:hidden;
+}
+.cur(@c){
+  cursor:@c;
+}
+.fss(){
+  -webkit-text-size-adjust:none;
+}
+.ls(@a){
+  letter-spacing: @a;
+}
+.bi(@a){
+  background-image: linear-gradient(@a);
+  background-image: -webkit-linear-gradient(@a);
+  background-image: -moz-linear-gradient(@a);
+  background-image: -ms-linear-gradient(@a);
+  background-image: -o-linear-gradient(@a);
+}
+.bw(){
+      word-wrap: break-word;
+}
